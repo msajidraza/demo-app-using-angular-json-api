@@ -1,0 +1,65 @@
+
+  <main>
+  	<div class="row g-5">
+      <div class="col-md-3 col-lg-3"></div>
+      <div class="col-md-6 col-lg-6 pt-5">
+		    <h2 class="mb-3">Sign Up</h2>
+		    <div class="mb-3 text-muted">Please fill the sign up form</div>
+	
+			  <form class="needs-validation" #signUpFrom="ngForm" (ngSubmit)="getSignupFormData(signUpFrom.value)">
+				  <div class="row g-3">
+				    <div class="col-sm-6">
+				      <label for="first_name" class="form-label">First Name <span class="text-danger">*</span></label>
+				      <input type="text" ngModel class="form-control" id="first_name" name="first_name" placeholder="" value="" required>
+				      <div class="invalid-feedback">
+				        Valid first name is required.
+				      </div>
+				    </div>
+				    <div class="col-sm-6">
+				      <label for="last_name" class="form-label">Last Name <span class="text-danger">*</span></label>
+				      <input type="text" ngModel class="form-control" id="last_name" name="last_name" placeholder="" value="" required>
+				      <div class="invalid-feedback">
+				        Valid last name is required.
+				      </div>
+				    </div>
+				    <div class="col-12">
+				      <label for="mobile" class="form-label">Mobile </label>
+				      <input type="text" ngModel class="form-control" id="mobile" name="mobile" placeholder="" value="" required>
+				      <div class="invalid-feedback">
+				        Valid mobile no. is required.
+				      </div>
+				    </div>
+				    <div class="col-12">
+				      <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+				      <input type="email" ngModel class="form-control" id="email" name="email" placeholder="">
+				      <div class="invalid-feedback">
+				        Please enter a valid email.
+				      </div>
+				    </div>
+
+				    <div class="col-12">
+				      <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
+				      <input type="password" ngModel class="form-control" id="password" name="password" placeholder="" required>
+				      <div class="invalid-feedback">
+				        Please enter your password.
+				      </div>
+				    </div>
+				    <div class="col-12 mb-3">
+				      <label for="conf_password" class="form-label">Confirm Password <span class="text-danger">*</span></label>
+				      <input type="password" ngModel class="form-control" id="conf_password" name="conf_password" placeholder="" required>
+				      <div class="invalid-feedback">
+				        Please enter confirm password.
+				      </div>
+				    </div>
+
+				    <div class="col-12">
+				      <button class="w-100 btn btn-primary btn-lg">Sign Up</button>
+				    </div>				  	
+				  </div>
+				</form>
+	  
+	  	</div>
+	  	<div class="col-md-3 col-lg-3"></div>
+		</div>
+
+  </main>
